@@ -8,12 +8,13 @@
     <title>@yield('page-title', 'Hello Laravel World')</title>
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+    
 </head>
 
 <body class="">
     <!--  Includo l'header del sito web con il menu tramite un partial -->
     @include('partials.header')
+    @yield('content-top')
 
     <main>
         @yield('content')
